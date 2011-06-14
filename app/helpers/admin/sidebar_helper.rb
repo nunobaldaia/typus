@@ -5,7 +5,7 @@ module Admin
       resources = ActiveSupport::OrderedHash.new
       app_name = @resource.typus_application
 
-      admin_user.application(app_name).sort {|a,b| a.typus_constantize.model_name.human <=> b.typus_constantize.model_name.human}.each do |resource|
+      admin_user.application(app_name) {|a,b| a.typus_constantize.model_name.human <=> b.typus_constantize.model_name.human}.each do |resource|
         klass = resource.typus_constantize
 
         resources[resource] = default_actions(klass)
