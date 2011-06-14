@@ -38,6 +38,7 @@ module Admin
 
       render "admin/templates/has_n",
              :association_name => @association_name,
+             :association_title => @model_to_relate.model_name.human.pluralize,
              :add_new => build_add_new(options),
              :form => form,
              :table => build_relationship_table
@@ -65,6 +66,7 @@ module Admin
 
       render "admin/templates/has_n",
              :association_name => @association_name,
+             :association_title => @model_to_relate.model_name.human.pluralize,
              :add_new => build_add_new,
              :form => form,
              :table => build_relationship_table
@@ -134,6 +136,7 @@ module Admin
 
       render "admin/templates/has_one",
              :association_name => @association_name,
+             :association_title => @model_to_relate.model_name.human,
              :add_new => @items.empty? ? build_add_new(options) : nil,
              :table => build_relationship_table
     end
