@@ -175,7 +175,8 @@ module Typus
         "Français" => "fr",
         "Magyar" => "hu",
         "Italiano" => "It",
-        "Portuguese" => "pt-BR",
+        "Portuguese" => "pt-PT",
+        "Brazilian Portuguese" => "pt-BR",
         "Russian" => "ru",
         "中文" => "zh-CN" }
     end
