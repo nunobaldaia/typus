@@ -131,6 +131,11 @@ class Admin::ResourcesController < Admin::BaseController
     @object_name = ActiveModel::Naming.singular(@resource)
   end
 
+  def resource
+    params[:controller].extract_class
+  end
+  helper_method :resource
+
   def set_context
     @resource
   end
