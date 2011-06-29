@@ -2,7 +2,7 @@
   <% label = "#{@item.class.model_name.underscore.gsub("/","_")}_#{related_fk}" %>
   <script type="text/javascript">
     $(document).ready(function () {
-        $("#tokenInput_for_<%= related_fk %>").tokenInput("/admin/<%= association.name.to_s.pluralize %>/autocomplete", {
+        $("#tokenInput_for_<%= related_fk %>").tokenInput("/admin/<%= association.class_name.tableize %>/autocomplete", {
             hintText: "",
             queryParam: 'term',
             tokenLimit: 1,

@@ -9,6 +9,8 @@
   "Add new": "Adicionar novo"
   "Are you sure?": "Tem a certeza?"
   "Are you sure you want to sign out and end your session?": "Tem certeza que quer sair e encerrar sua sessão?"
+  
+  "Bottom": "Fundo"
 
   "Change %{attribute}?": "Mudar %{attribute}?"
   "Create %{resource}": "Criar %{resource}"
@@ -62,6 +64,7 @@
   "System Users Administration": "Administração de utilizadores de sistema"
 
   "Today": "Hoje"
+  "Top": "Topo"
   "True": "Verdadeiro"
 
   "Unrelate": "Desvincular"
@@ -78,6 +81,3 @@
   "%{model} successfully created": "%{model} criado com sucesso."
   "%{model} successfully removed": "%{model} removido com sucesso."
   "%{model} successfully updated": "%{model} atualizado com sucesso."
-  
-  "Top": "Topo"
-  "Bottom": "Fundo"

@@ -85,15 +85,15 @@ module Admin
       (raw_content = item.send(attribute)).present? ? truncate(raw_content) : "&mdash;".html_safe
     end
 
-    def table_generic_field(attribute, item)
+    def table_string_field(attribute, item)
       (raw_content = item.send(attribute)).present? ? raw_content : "&mdash;".html_safe
     end
 
-    alias :table_float_field :table_generic_field
-    alias :table_integer_field :table_generic_field
-    alias :table_decimal_field :table_generic_field
-    alias :table_virtual_field :table_generic_field
-    alias :table_string_field :table_generic_field
+    alias :table_float_field :table_string_field
+    alias :table_integer_field :table_string_field
+    alias :table_decimal_field :table_string_field
+    alias :table_virtual_field :table_string_field
+    alias :table_password_field :table_string_field
 
     def table_selector_field(attribute, item)
       item.mapping(attribute)

@@ -18,6 +18,12 @@ $(document).ready(function() {
     'type': 'iframe'
   });
 
+  // This method is used by `text_with_ckeditor` template.
+  if ($('textarea.ckeditor').length > 0) {
+      var data = $('textarea');
+      $.each(data, function(i) { CKEDITOR.replace(data[i].id); });
+  }
+
 });
 
 function setConfirmUnload(on) {

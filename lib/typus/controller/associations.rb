@@ -62,7 +62,7 @@ module Typus
         if worked
           notice = Typus::I18n.t("%{model} successfully updated.", :model => item_class.model_name.human)
         else
-          alert = item.error.full_messages
+          alert = item.errors.full_messages
         end
 
         redirect_to :back, :notice => notice, :alert => alert
